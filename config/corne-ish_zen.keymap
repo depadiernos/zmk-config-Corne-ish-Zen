@@ -10,24 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-        combos {
-            compatible = "zmk,combos";
-            combo_3 {
-                timeout-ms = <75>;
-                key-positions = <31 32>;
-                bindings = <&sl 2>;
-            };
-            combo_3_right {
-                timeout-ms = <75>;
-                key-positions = <33 34>;
-                bindings = <&sl 2>;
-            };
-            combo_esc {
-                timeout-ms = <75>;
-                key-positions = <0 4>;
-                bindings = <&kp ESC>;
-            }; 
-    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -54,9 +37,9 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-        &trans  &kp N1    &kp N2    &kp N3   &kp N4   &kp N5    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END      &trans       &trans
-        &trans  &kp N6    &kp N7    &kp N8   &kp N9   &kp N0    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT    &trans       &trans
-        &trans  &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp GRAVE &bt BT_CLR &bt BT_PRV &bt BT_NXT &kp C_VOL_DN &kp C_VOL_UP &trans
+        &trans &kp N1    &kp N2    &kp N3   &kp N4   &kp N5    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END      &trans       &trans
+        &trans &kp N6    &kp N7    &kp N8   &kp N9   &kp N0    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT    &trans       &trans
+        &trans &kp MIN &kp EQL &kp LBKT &kp RBKT &kp GRAVE &bt BT_CLR &bt BT_PRV &bt BT_NXT &kp C_VOL_DN &kp C_VOL_UP &trans
                         &trans &trans &kp BSPC &kp SPACE &trans     &kp RALT
                         >;
                 };
